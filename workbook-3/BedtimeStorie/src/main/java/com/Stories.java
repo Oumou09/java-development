@@ -17,13 +17,22 @@ public class Stories {
             int lineNumer = 1;
             while (fileScanner.hasNextLine()) {
                 String Line = fileScanner.nextLine();
-                System.out.println("%d. %s%n" + lineNumer + Line);
+                System.out.println( lineNumer + " " + Line);
                 lineNumer++;
 
+
+
+
             }
-            Scanner.close();
+
+
+
         } catch (Exception exception) {
             System.out.println("File not found." + fileName);
+
+
         }
+
     }
+
 }
