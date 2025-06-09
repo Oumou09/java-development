@@ -14,9 +14,17 @@ public class Main {
 
         Deck deck = new Deck();
         deck.shuffle();
-        
-        Hand hand1 = new Hand();
-        Hand hand2 = new Hand();
+
+        //Player1
+        Hand handToPlayer1 = new Hand();
+        handToPlayer1.deal(deck.deal());
+        handToPlayer1.deal(deck.deal());
+
+        //Player2
+        Hand handToPlayer2 = new Hand();
+        handToPlayer2.deal(deck.deal());
+        handToPlayer2.deal(deck.deal());
+
 
 
 
